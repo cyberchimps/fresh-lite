@@ -4,7 +4,7 @@ Theme URI: http://cyberchimps.com/fresh-lite/
 Author: CyberChimps
 Author URI: http://www.cyberchimps.com/
 Description: Fresh Lite is a fully Responsive Drag & Drop Starter WordPress Theme that adds amazing new functionality to your WordPress website. Featuring Twitter Bootstrap, and responsive touch friendly theme options that work on any device. Please use the <a href="http://cyberchimps.com/forum/">official support forum</a> (http://cyberchimps.com/forum/). Thank you.
-Version: 1.0.45
+Version: 1.1
 Tags: white, gray, green, light, two-columns, right-sidebar, responsive-layout, fixed-layout, custom-background, custom-colors, custom-menu, featured-images, post-formats, theme-options, sticky-post
 License: GNU General Public License version 3
 License URI: http://www.opensource.org/licenses/gpl-license.php GPL v3.0 (or later)
@@ -1035,4 +1035,29 @@ table#wp-calendar td {
 		font-size: 3.7em;
 	}
 
+}
+
+/* =Top Menu
+-------------------------------------------------------------- */
+.top-menu {
+	float: right;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.top-menu li {
+	display: inline;
+	list-style-type: none;
+}
+
+.top-menu li a {
+	border-left: 1px solid #cccccc;
+	color: #fff;
+	font-size: 13px;
+	padding: 0 4px 0 8px;
+	text-decoration: none;
+}
+
+.top-menu > li:first-child > a {
+	border-left: none;
 }
