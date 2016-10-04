@@ -2,6 +2,9 @@ Fresh Lite Changelog
 
 ****************************
 
+Version 1.1 (05-10-16)
+- Added Secondary Menu option (Top Menu)
+
 Version 1.0.46 (2-12-15)
 - Fix few minor issues related to customization
 
