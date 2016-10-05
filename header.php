@@ -51,8 +51,12 @@
 
 <!-- ---------------- Header --------------------- -->
 <div class="container-full-width" id="header_section">
-<?php wp_nav_menu( array( 'theme_location' => 'top-menu' , 'menu_class'     => 'top-menu',) ); ?>
 	<div class="container">
+		<?php 
+			if( has_nav_menu( 'top-menu' ) ) :
+				wp_nav_menu( array( 'theme_location' => 'top-menu' , 'menu_class' => 'top-menu',) ); 
+			endif;
+		?>
 		<?php do_action( 'cyberchimps_before_wrapper' ); ?>
 		<div class="container-fluid">
 			<?php do_action( 'cyberchimps_header' ); ?>
