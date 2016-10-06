@@ -18,7 +18,7 @@
 // Load text domain.
 function cyberchimps_text_domain() {
 	load_theme_textdomain( 'fresh-lite', get_template_directory() . '/inc/languages' );
-
+	add_theme_support( "title-tag" );
 	register_nav_menus( array('top-menu' => __( 'Top Menu', 'fresh-lite' )) );
 }
 add_action( 'after_setup_theme', 'cyberchimps_text_domain' );
