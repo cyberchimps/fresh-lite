@@ -1,6 +1,9 @@
 Fresh Lite Changelog
 
 ****************************
+Version 1.2 (04-20-17)
+- Fixed issue with PHP 7.1 
+- Fixed issue with loading google fonts (used protocol relative link)
 
 Version 1.1 (05-10-16)
 - Added Secondary Menu option (Top Menu)
