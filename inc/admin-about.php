@@ -66,7 +66,7 @@ function cyberchimps_display_about() {
 			<tr>
 				<th class=""></th>
 				<th>Fresh Lite</th>
-				<th>Fresh Pro 4</th>
+				<th>Fresh Pro</th>
 			</tr>
 
 			<tr>
