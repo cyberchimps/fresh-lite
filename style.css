@@ -21,12 +21,7 @@ body {
 	word-wrap: break-word;
 }
 
-@media (max-width: 767px){
-	body {
-	     padding-right: 0;
-	     padding-left: 0;
-	}
-}
+
 
 a {
 	color: #a1ba3a;
@@ -797,9 +792,7 @@ table#wp-calendar td {
 	margin-bottom: 5px;
 }
 
-aside.widget-container #searchform input.input-medium{
-	width: auto;
-}
+
 
 /********************************************************************************************************************/
 /******************************************** FOOTER ****************************************************************/
@@ -1079,19 +1072,19 @@ aside.widget-container #searchform input.input-medium{
 select{
     width:100%;
 }
-@media (max-width: 980px) {
-    .widget-container #searchform input.input-medium{
+
+.widget-container #searchform input.input-medium{
          width: 81%;
-	}
 }
+
 .site-title, .box-widget-title, .entry-title, .widget-title, .recent_posts_post_title,
-#callout_section_section, .carousel_caption, .cyberchimps-product-title, .respond-title, .comments-title, #portfolio_pro_section h2, #fl_testimonial_top h2, #contact_us h2 {
+#callout_section_section, .carousel_caption, .cyberchimps-product-title, .respond-title, .comments-title, #portfolio_pro_section h2, #fresh_lite_testimonial_top h2, #contact_us h2 {
   font-family: "Noto Sans", Arial, sans-serif;
 }
 
 /*============= Testimonial ==========*/
 
-.fl_main_title{
+.fresh_lite_main_title{
       margin-top: 80px;
       text-align: center;
       font-size: 1.8em;
@@ -1106,13 +1099,13 @@ select{
     padding: 0;
     list-style: none;
  }
- 	.slides.fl_carousel {
+ 	.slides.fresh_lite_carousel {
     max-width: 100%;
     display: inline-block;
     padding-top: 20px;
     width: auto !important;
 }
- 	#testimonial_section .fl_short_desc {
+ 	#testimonial_section .fresh_lite_short_desc {
       margin-top: 80px;
 }
    #testimonial_section {
@@ -1129,16 +1122,16 @@ select{
       margin: 0 auto;
       left: 0;
       right: 0; }
-    #testimonial_section .fl_slider_text_img {
+    #testimonial_section .fresh_lite_slider_text_img {
       color: #fff; }
-      #testimonial_section .fl_slider_text_img li {
+      #testimonial_section .fresh_lite_slider_text_img li {
 	    width: auto;
         text-align: center;
 	}
-     #testimonial_section .fl_testimonial_author {
+     #testimonial_section .fresh_lite_testimonial_author {
       font-weight: 600;
       font-size: 1.125em; }
-    #testimonial_section .fl_testimonial_abt_author {
+    #testimonial_section .fresh_lite_testimonial_abt_author {
       font-weight: 500;
       margin-bottom: 12%; }
     #testimonial_section .after_testimonial_text {
@@ -1170,7 +1163,7 @@ select{
         position: relative;
         font-size: 16px;
     }
-    .fl_main_title{
+    .fresh_lite_main_title{
         margin-top: 80px;
         text-align: center;
     }
@@ -1231,7 +1224,7 @@ select{
 	    .contact_addr {
 	    padding-bottom: 10px;
 	    }
-	    .fl_testimonial_text{
+	    .fresh_lite_testimonial_text{
 	    padding: 0 20px;
 	    }
 	}

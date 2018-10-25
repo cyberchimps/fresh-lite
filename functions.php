@@ -404,22 +404,22 @@ function fresh_lite_admin_notices()
 
 }
 /**
- * [fl_enqueue description]
+ * [fresh_lite_enqueue description]
  *
  * @return void
  */
-function fl_enqueue() {
+function fresh_lite_enqueue() {
 	$directory_uri = get_template_directory_uri();
 	wp_enqueue_script( 'jquery-flexslider', $directory_uri . '/inc/js/jquery.flexslider.js', 'jquery', '1.0', true );
 }
-add_action( 'wp_enqueue_scripts', 'fl_enqueue' );
+add_action( 'wp_enqueue_scripts', 'fresh_lite_enqueue' );
 
 /**
- * [fl_set_defaults description]
+ * [fresh_lite_set_defaults description]
  */
-function fl_set_defaults()
+function fresh_lite_set_defaults()
 {
  	remove_action('testimonial', array( CyberChimpsTestimonial::instance(), 'render_display' ));
-	add_action('testimonial', 'fl_testimonial_render_display');
+	add_action('testimonial', 'fresh_lite_testimonial_render_display');
 }
-add_action( 'init', 'fl_set_defaults' );
+add_action( 'init', 'fresh_lite_set_defaults' );

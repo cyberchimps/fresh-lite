@@ -2,7 +2,7 @@
 /* Testimonial */
 
 // frontend display
-function fl_testimonial_render_display()
+function fresh_lite_testimonial_render_display()
 {
 	global $post;
         // Set directory uri
@@ -10,7 +10,7 @@ function fl_testimonial_render_display()
         $testimonials = array();
 	if(is_page())
 	{
-		$fl_testimonial_title = get_post_meta( $post->ID, 'ir_testimonial_title', true );
+		$fresh_lite_testimonial_title = get_post_meta( $post->ID, 'ir_testimonial_title', true );
  		$testimonial_background = get_post_meta( $post->ID, 'testimonial_background', true );
 		 // Get testimonial images
                 $testimonials[0]['img'] = get_post_meta( $post->ID, 'cyberchimps_blog_testimonial_image_one', true );
@@ -36,7 +36,7 @@ function fl_testimonial_render_display()
 	}
 	else
 	{
-		$fl_testimonial_title = cyberchimps_get_option('ir_testimonial_title');
+		$fresh_lite_testimonial_title = cyberchimps_get_option('ir_testimonial_title');
 		$testimonial_background = cyberchimps_get_option('testimonial_background');
 
                 // Get testimonial images
@@ -64,7 +64,7 @@ function fl_testimonial_render_display()
 
 	}
 
-	if(  !empty($fl_testimonial_title)  ){
+	if(  !empty($fresh_lite_testimonial_title)  ){
 
         if($testimonial_background)
         {
@@ -92,13 +92,13 @@ function fl_testimonial_render_display()
           }
         ?>
 
-	<div id="fl_testimonial_top">
-		<?php if( !empty($fl_testimonial_title) ) { ?>
+	<div id="fresh_lite_testimonial_top">
+		<?php if( !empty($fresh_lite_testimonial_title) ) { ?>
 
 
-				<?php if(!empty($fl_testimonial_title)) { ?>
-				<h2 class="fl_main_title">
-					<?php echo $fl_testimonial_title; ?>
+				<?php if(!empty($fresh_lite_testimonial_title)) { ?>
+				<h2 class="fresh_lite_main_title">
+					<?php echo $fresh_lite_testimonial_title; ?>
 				</h2>
 				<?php } ?>
 
@@ -107,22 +107,22 @@ function fl_testimonial_render_display()
 	</div>
 
 
-      <section class="fl_slider_text_img">
+      <section class="fresh_lite_slider_text_img">
         <div id="slider2" class="flexslider">
           <ul class="slides">
 			<?php	foreach( $testimonials as $testimonial) {
         					 ?>
 
 				<li class="col-md-12">
-                                    <span class="fl_testimonial_text"><?php if(!empty($testimonial['text'])){echo $testimonial['text'];} ?></span>
+                                    <span class="fresh_lite_testimonial_text"><?php if(!empty($testimonial['text'])){echo $testimonial['text'];} ?></span>
 					<?php if(!empty($testimonial['text']))
 							{ ?>
 							<hr class="after_testimonial_text"> </hr>
 					<?php } ?>
-					<div class="fl_testimonial_author">
+					<div class="fresh_lite_testimonial_author">
                                                 <?php  if(!empty($testimonial['client'])){echo $testimonial['client'];} ?>
 					</div>
-					<div class="fl_testimonial_abt_author">
+					<div class="fresh_lite_testimonial_abt_author">
                                                 <?php if(!empty($testimonial['client_abt'])){echo $testimonial['client_abt'];} ?>
 					</div>
 				</li>
@@ -133,7 +133,7 @@ function fl_testimonial_render_display()
         </div>
 	<?php $slide_counters = 0; ?>
         <div id="carousel2" class="flexslider">
-          <ul class="slides fl_carousel" >
+          <ul class="slides fresh_lite_carousel" >
 			<?php	foreach( $testimonials as $testimonial ) {
                           if(!empty($testimonial['img'])){
 
