@@ -4,7 +4,7 @@ Theme URI: http://cyberchimps.com/fresh-lite/
 Author: CyberChimps
 Author URI: http://www.cyberchimps.com/
 Description: Fresh Lite is a fully Responsive Drag & Drop Starter WordPress Theme that adds amazing new functionality to your WordPress website. Featuring Twitter Bootstrap, and responsive touch friendly theme options that work on any device. Fresh Lite has visible edit links in the customizer preview. For Support - <a href="https://cyberchimps.com/forum/free/fresh/" target="_blank"> Support forum</a> (https://cyberchimps.com/forum/free/fresh/).
-Version: 1.3
+Version: 1.4
 Text Domain: fresh-lite
 Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, post-formats, theme-options, sticky-post, blog, custom-logo, footer-widgets, threaded-comments
 License: GNU General Public License version 3
@@ -20,6 +20,8 @@ body {
 	color: #555555;
 	word-wrap: break-word;
 }
+
+
 
 a {
 	color: #a1ba3a;
@@ -790,6 +792,8 @@ table#wp-calendar td {
 	margin-bottom: 5px;
 }
 
+
+
 /********************************************************************************************************************/
 /******************************************** FOOTER ****************************************************************/
 /********************************************************************************************************************/
@@ -816,6 +820,8 @@ table#wp-calendar td {
 .site-footer {
 	margin-top: 20px;
 	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: nowrap;
 }
 
 .site-footer #copyright {
@@ -1066,7 +1072,197 @@ table#wp-calendar td {
 select{
     width:100%;
 }
-@media (max-width: 980px) {
-    .widget-container #searchform input.input-medium{
+
+.widget-container #searchform input.input-medium{
          width: 81%;
+}
+
+.site-title, .box-widget-title, .entry-title, .widget-title, .recent_posts_post_title,
+#callout_section_section, .carousel_caption, .cyberchimps-product-title, .respond-title, .comments-title, #portfolio_pro_section h2, #fresh_lite_testimonial_top h2, #contact_us h2 {
+  font-family: "Noto Sans", Arial, sans-serif;
+}
+
+/*============= Testimonial ==========*/
+
+.fresh_lite_main_title{
+      margin-top: 80px;
+      text-align: center;
+      font-size: 1.8em;
+  }
+  ul.slides {
+      margin-left: 0;
+  }
+  .flexslider .slides > li {
+    display: block;
+    -webkit-backface-visibility: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ }
+ 	.slides.fresh_lite_carousel {
+    max-width: 100%;
+    display: inline-block;
+    padding-top: 20px;
+    width: auto !important;
+}
+ 	#testimonial_section .fresh_lite_short_desc {
+      margin-top: 80px;
+}
+   #testimonial_section {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0% 0%; }
+    #testimonial_section .img-responsive {
+      -webkit-border-radius: 100%;
+         -moz-border-radius: 100%;
+              border-radius: 100%;
+      border: 5px solid #fff; }
+    #testimonial_section .flexslider {
+      background: transparent;
+      border: none;
+      width: 100%;
+      margin: 0 auto;
+      left: 0;
+      right: 0; }
+    #testimonial_section .fresh_lite_slider_text_img {
+      color: #fff; }
+      #testimonial_section .fresh_lite_slider_text_img li {
+	    width: auto;
+        text-align: center;
+	}
+     #testimonial_section .fresh_lite_testimonial_author {
+      font-weight: 600;
+      font-size: 1.125em; }
+    #testimonial_section .fresh_lite_testimonial_abt_author {
+      font-weight: 500;
+      margin-bottom: 12%; }
+    #testimonial_section .after_testimonial_text {
+      margin: 25px auto;
+      padding: 0;
+      max-width: 84px;
+      border: 0;
+      border-top: solid 2px #cd834a;
+      text-align: center;
+      background: transparent; }
+    #testimonial_section #carousel2.flexslider {
+      position: absolute;
+      bottom: -20%; }
+    #testimonial_section .flex-active-slide img {
+      border-color: #cd834a; }
+    #testimonial_section .flex-active-slide .arrow-top {
+      position: absolute;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #e14c3d;
+      border-left: 10px solid transparent;
+      top: 12px;
+      left: 13%; }
+    #testimonial_section .flex-viewport {
+      text-align: center; }
+    testimonial_section .flexslider .slides {
+      padding-bottom: 30px; }
+     #testimonial_section{
+        color: #fff;
+        position: relative;
+        font-size: 16px;
     }
+    .fresh_lite_main_title{
+        margin-top: 80px;
+        text-align: center;
+    }
+    .flex-direction-nav{
+        display: none;
+    }
+ 	/* =============================== Contact Section  ========================== */
+	.contactus_wrapper{
+	    padding: 0 0 3% 0;
+	    color: #fff;
+ 	}
+	.contactus_wrapper.span12
+	{
+	     margin: 0 auto;
+	}
+	#contact_us input[type="text"], #contact_us textarea{
+	    width: 96%;
+	    padding: 10px;
+	    border: none;
+	    border-radius: 2px;
+	    margin-bottom: 12px;
+ 	}
+	.contact_left_sec{
+	    font-size: 16px;
+	    line-height: 1.8;
+	}
+	.fa
+	{
+	    font-size: 30px;
+	}
+	.contact_right_sec input[type="submit"]
+	{
+	    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #cd834a 0%, #9e663d 100%) repeat scroll 0 0;
+	    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	    color: #fff;
+	    font-family: lobster,cursive;
+	    font-size: 17.5px;
+	    border: none;
+	    border-radius: 3px;
+	    padding: 15px 55px;
+	    margin: 2% 32%;
+ 	}
+	.contact_title{
+	    text-align: center;
+	    color: #fff;
+	    padding-top: 20px;
+	    font-size: 1.8em;
+	}
+ 	@media all and (max-width: 767px) {
+	    .contact_left_sec
+	    {
+	        text-align: center;
+	    }
+	    .contactus_wrapper.span12
+	    {
+	        padding: 20px 30px;
+	    }
+	    .contact_addr {
+	    padding-bottom: 10px;
+	    }
+	    .fresh_lite_testimonial_text{
+	    padding: 0 20px;
+	    }
+	}
+	/* ========================== Contact details in header  =========================== */
+ 	.contact_details{
+	    font-family: lobster,cursive;
+	    font-size: 20px;
+	    letter-spacing: 1px;
+	}
+	.contact_details:before{
+	    font-family: "FontAwesome";
+	    content: "\f095";
+	}
+	#register
+	{
+	    padding: 12px 0 0 0;
+	}
+ 	.entry-content ol,
+	.entry-content ul,
+	.entry-summary ol,
+	.entry-summary ul{
+		margin-left: 2.9em;
+	}
+ 	.entry-content ol.wp-block-gallery,
+	.entry-content ul.wp-block-gallery,
+	.entry-summary ol.wp-block-gallery,
+	.entry-summary ul.wp-block-gallery {
+		display: flex;
+	    flex-wrap: wrap;
+	    list-style-type: none;
+	}
+ 	audio, canvas, video {
+	    display: inline-block;
+	    width: 100%;
+	}
+ 	.wp-block-column p {
+	    padding: 0 14px;
+	}
+ 	.wp-block-gallery .blocks-gallery-item figcaption {
+	        padding: 40px 0;
+	}

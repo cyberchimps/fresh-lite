@@ -26,6 +26,7 @@ add_action( 'after_setup_theme', 'cyberchimps_text_domain' );
 // Load Core
 require_once( get_template_directory() . '/cyberchimps/init.php' );
 require_once( get_template_directory() . '/inc/admin-about.php' );
+require_once( get_template_directory() . '/inc/testimonial_template.php' );
 
 // Set the content width based on the theme's design and stylesheet.
 if( !isset( $content_width ) ) {
@@ -402,3 +403,23 @@ function fresh_lite_admin_notices()
 	}
 
 }
+/**
+ * [fresh_lite_enqueue description]
+ *
+ * @return void
+ */
+function fresh_lite_enqueue() {
+	$directory_uri = get_template_directory_uri();
+	wp_enqueue_script( 'jquery-flexslider', $directory_uri . '/inc/js/jquery.flexslider.js', 'jquery', '1.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'fresh_lite_enqueue' );
+
+/**
+ * [fresh_lite_set_defaults description]
+ */
+function fresh_lite_set_defaults()
+{
+ 	remove_action('testimonial', array( CyberChimpsTestimonial::instance(), 'render_display' ));
+	add_action('testimonial', 'fresh_lite_testimonial_render_display');
+}
+add_action( 'init', 'fresh_lite_set_defaults' );

@@ -1,11 +1,14 @@
 Fresh Lite Changelog
 
 ****************************
+Version 1.4 (10-25-18)
+- Added testimonial and contact us element
+
 Version 1.3 (07-28-17)
 - Added visible edit links in the customizer preview
 
 Version 1.2 (04-20-17)
-- Fixed issue with PHP 7.1 
+- Fixed issue with PHP 7.1
 - Fixed issue with loading google fonts (used protocol relative link)
 
 Version 1.1 (05-10-16)
@@ -89,7 +92,7 @@ Version 1.0.26 (5-9-14)
 - Added FooBox as recommended plugin.
 
 Version 1.0.25 (5-2-14)
-- Fixed byline toggle issue. 
+- Fixed byline toggle issue.
 
 Version 1.0.24 (4-24-14)
 - Added recommendation for clef plugin.
